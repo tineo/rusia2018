@@ -39,10 +39,10 @@ a {
 
 .digito{
   width: 12em;
-  background-color: blueviolet;
+  /*background-color: blueviolet;*/
 }
 .signo{
-  background-color: #cb3837;
+  /*background-color: #cb3837;*/
 }
 
 .numero{
