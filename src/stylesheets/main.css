@@ -1,0 +1,60 @@
+/*@font-face {
+  font-family: 'Gudea';
+  src: url('../fonts/Gudea-Regular.ttf') format('truetype');
+}
+*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: black;
+  font-family: 'Gudea', sans-serif;
+}
+
+h1{ font-size: 3.5em;}
+
+a {
+  text-decoration: none;
+  color: #cb3837;
+}
+
+.container {
+  text-align: center;
+}
+
+
+.digito, .signo{
+  display: inline-block;
+}
+
+.digito{
+  width: 12em;
+  background-color: blueviolet;
+}
+.signo{
+  background-color: #cb3837;
+}
+
+.numero{
+  font-size: 5em;
+}
+
+.texto{
+  font-size: 3em;
+}
+
+.contenedor {
+  padding: 2.5em;
+  border-radius: 1em;
+  border: dotted 10px #ffffff;
+}
