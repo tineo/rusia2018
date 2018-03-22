@@ -46,7 +46,8 @@ a {
 }
 
 .numero{
-  font-size: 5em;
+  font-size: 8em;
+  font-weight: bold;
 }
 
 .texto{

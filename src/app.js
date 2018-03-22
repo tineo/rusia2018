@@ -10,7 +10,7 @@ import "./helpers/external_links.js";
 
 import { remote } from "electron";
 import jetpack from "fs-jetpack";
-import { greet } from "./hello_world/hello_world";
+//import { greet } from "./hello_world/hello_world";
 import env from "env";
 
 const app = remote.app;
@@ -26,6 +26,9 @@ momentDurationFormatSetup(moment);
 // files from disk like it's node.js! Welcome to Electron world :)
 const manifest = appDir.read("package.json", "json");
 
+function addZero(digit){
+  if(digit  <10) {return "0"+digit;}else{return ""+digit;}
+}
 const osMap = {
   win32: "Windows",
   darwin: "macOS",
@@ -68,9 +71,9 @@ setInterval(function(){
 
   //document.querySelector("#greet").innerHTML = moment("2018-6-14").countdown().toString();
   //document.querySelector("#greet").innerHTML =  days + ' days ' +  hrs + ' hrs ' + mins + ' mins ' + secs + ' sec';
-  document.querySelector("#dias").innerHTML = days + "";
-  document.querySelector("#horas").innerHTML = hrs + "";
-  document.querySelector("#minutos").innerHTML = mins + "";
-  document.querySelector("#segundos").innerHTML = secs + "";
+  document.querySelector("#dias").innerHTML = addZero(days);
+  document.querySelector("#horas").innerHTML = addZero(hrs);
+  document.querySelector("#minutos").innerHTML = addZero(mins);
+  document.querySelector("#segundos").innerHTML = addZero(secs);
   //alert("Hello");
 }, 1000);

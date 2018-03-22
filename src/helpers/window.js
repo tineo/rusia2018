@@ -78,8 +78,8 @@ export default (name, options) => {
   state = ensureVisibleOnSomeDisplay(restore());
 
   win = new BrowserWindow(Object.assign({}, options, state));
-  //win.maximize();
-  //win.setMenu(null);
+  win.maximize();
+  win.setMenu(null);
   win.on("close", saveState);
 
   return win;
